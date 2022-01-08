@@ -79,13 +79,11 @@ def fetchAndSaveGroupContacts():
     elif (int(g_index) > len(groups)):
         print("The number supplied cannot be greater than the greatest number in the list above. Please try again.")
         print('')
-        print('')
         fetchAndSaveGroupContacts()
     elif g_index.isdigit():
         target_group=groups[int(g_index)]
     else:
         print("Sorry! You've supplied an invalid input. Please try again.")
-        print('')
         print('')
         fetchAndSaveGroupContacts()
       
